@@ -1,0 +1,51 @@
+**Lembrando que a criação de itens pode variar o local e forma de ser criado de base para base**
+
+Criação dos itens
+
+    ["suspensaoar"] = { index = "suspensaoar", nome = "Kit Suspensão a ar", type = "usar", weigth = 0.5 },
+    ["kitneon"] = { index = "kitneon", nome = "Kit módulo Neon", type = "usar", weigth = 0.5 },
+    ["kitxenon"] = { index = "kitxenon", nome = "Kit módulo Xenon", type = "usar", weigth = 0.5 },
+    ["kitcamber"] = { index = "kitcamber", nome = "Kit módulo Camber", type = "usar", weigth = 0.5 },
+    ["kitoffset"] = { index = "kitoffset", nome = "Kit módulo Offset", type = "usar", weigth = 0.5 },
+    ["escapamentoPop"] = { index = "escapamentoPop", nome = "Escapamento Especial", type = "usar", weigth = 0.5 },
+    ["fueltech"] = { index = "fueltech", nome = "Fueltech", type = "usar", weigth = 0.5 },
+    ["westgate"] = { index = "westgate", nome = "Westgate", type = "usar", weigth = 0.5 },
+    ["purgador"] = { index = "purgador", nome = "Purgador", type = "usar", weigth = 0.5 },
+
+Usar dos itens
+
+    ["suspensaoar"] = function(source, user_id, itemName)
+        TriggerClientEvent('zo_install_modulo_tuning', source, "suspensao")
+    end,
+
+    ["kitxenon"] = function(source, user_id, itemName)
+        TriggerClientEvent('zo_install_modulo_tuning', source, "xenon")
+    end,
+
+    ["kitoffset"] = function(source, user_id, itemName)
+        TriggerClientEvent('zo_install_modulo_tuning', source, "offset")
+    end,
+
+    ["kitneon"] = function(source, user_id, itemName)
+        TriggerClientEvent('zo_install_modulo_tuning', source, "neon")
+    end,
+
+    ["kitcamber"] = function(source, user_id, itemName)
+        TriggerClientEvent('zo_install_modulo_tuning', source, "camber")
+    end,
+
+    ["fueltech"] = function(source, user_id, itemName)
+        TriggerClientEvent('zo_install_modulo_tuning', source, "remap")
+    end,
+
+    ["escapamentoPop"] = function(source, user_id, itemName)
+        TriggerClientEvent('zo_install_modulo_tuning', source, "antiLag")
+    end,
+
+    ["westgate"] = function(source, user_id, itemName)
+        TriggerClientEvent('zo_install_modulo_tuning', source, "westgate")
+    end,
+
+    ["purgador"] = function(source, user_id, itemName)
+        TriggerClientEvent('zo_install_modulo_tuning', source, "purgador")
+    end,
